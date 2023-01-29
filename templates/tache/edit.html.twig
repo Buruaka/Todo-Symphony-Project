@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Tache{% endblock %}
+
+{% block body %}
+    <h1>Modifier une tâche</h1>
+
+    {{ include('tache/_form.html.twig', {'button_label': 'Update'}) }}
+
+<div class="btn btn-primary mt-4">
+    <a href="{{ path('tache') }}" style="color:white;text-decoration:none">Annuler</a>
+</div>
+
+    {{ include('tache/_delete_form.html.twig') }}
+{% endblock %}
